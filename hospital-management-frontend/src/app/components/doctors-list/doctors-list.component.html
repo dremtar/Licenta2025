@@ -1,0 +1,50 @@
+<div class="title">Doctors</div>
+
+<mat-form-field>
+  <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Ion" #input />
+</mat-form-field>
+
+<table mat-table [dataSource]="dataSource" class="table">
+  <!-- Position Column -->
+  <ng-container matColumnDef="position">
+    <th mat-header-cell *matHeaderCellDef>No.</th>
+    <td mat-cell *matCellDef="let element">{{ element.id }}</td>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="firstName">
+    <th mat-header-cell *matHeaderCellDef>First Name</th>
+    <td mat-cell *matCellDef="let element">{{ element.firstName }}</td>
+  </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="lastName">
+      <th mat-header-cell *matHeaderCellDef>Last Name</th>
+      <td mat-cell *matCellDef="let element">{{ element.lastName }}</td>
+    </ng-container>
+
+  <!-- Date of Birth Column -->
+  <ng-container matColumnDef="phone">
+    <th mat-header-cell *matHeaderCellDef>Phone Number</th>
+    <td mat-cell *matCellDef="let element">{{ element.phoneNumber }}</td>
+  </ng-container>
+
+  <!-- Date of Birth Column -->
+  <ng-container matColumnDef="email">
+    <th mat-header-cell *matHeaderCellDef>Email</th>
+    <td mat-cell *matCellDef="let element">{{ element.email }}</td>
+  </ng-container>
+
+  <!-- Table Header Row -->
+  <tr mat-header-row *matHeaderRowDef="['position', 'firstName', 'lastName', 'phone' , 'email' ]"></tr>
+  <!-- Table Data Row -->
+  <tr
+    mat-row
+    *matRowDef="let row; columns: ['position', 'firstName', 'lastName', 'phone' , 'email' ]"
+  ></tr>
+</table>
+
+<mat-paginator
+  [pageSizeOptions]="[5, 10, 25, 100]"
+  aria-label="Select page of doctors"
+></mat-paginator>

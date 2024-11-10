@@ -1,0 +1,6 @@
+@Licenta2025_HostAddress = http://localhost:5134
+
+GET {{Licenta2025_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
