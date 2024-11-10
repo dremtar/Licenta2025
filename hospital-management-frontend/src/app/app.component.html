@@ -1,0 +1,11 @@
+<div class="page">
+  <div class="sidenav">
+    <div class="nav-header">Navigation</div>
+    <div (click)="switchView('patients')" class="nav-item">Patients</div>
+    <div (click)="switchView('doctors')" class="nav-item">Doctors</div>
+  </div>
+  <div class="content">
+    <app-patients-list *ngIf="currentView === 'patients'"></app-patients-list>
+    <app-doctors-list *ngIf="currentView === 'doctors'"></app-doctors-list>
+  </div>
+</div>
