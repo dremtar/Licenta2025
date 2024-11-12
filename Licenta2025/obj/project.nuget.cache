@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8cnIeUUKYWE=",
+  "dgSpecHash": "4A7jpW2yEw4=",
   "success": true,
-  "projectFilePath": "C:\\Licenta\\Licenta2025\\Licenta2025.csproj",
+  "projectFilePath": "C:\\Licenta2025\\Licenta2025\\Licenta2025.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Iubire\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Iubire\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
