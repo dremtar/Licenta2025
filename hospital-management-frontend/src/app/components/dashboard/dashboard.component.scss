@@ -1,0 +1,92 @@
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  display: flex;
+}
+
+/* Page structure */
+.page {
+  display: flex;
+  max-height: 900px;
+}
+
+/* Sidenav styling */
+.sidenav {
+  width: 250px;
+  height: 870px;
+  background-color: #d8f1ef;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Content area styling */
+.content {
+  padding: 20px;
+  flex: 1;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+/* Styling for the break line between navigation items */
+.break-line {
+  height: 1px;          /* Thin line */
+  background-color: #ccc; /* Light grey color for the line */
+  margin: 10px 0;        /* Space before and after the line */
+}
+
+/* Styling for navigation items */
+.nav-item {
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  color: #000;
+}
+
+/* Hover effect for nav items */
+.nav-item:hover {
+  background-color: #D6A2AD;
+  color: white;
+}
+
+/* Active class for the selected nav item */
+.nav-item.active {
+  background-color: #5D3F6B; /* Change the background to indicate selection */
+  color: white;
+}
+
+/* Logout button styling */
+.logout-btn {
+  position: relative;
+  display: inline-block;
+  margin-top: auto;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #725AC1;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #725AC1;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #725AC1;
+}
+
+/* Hover effect for logout button */
+.logout-btn:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #725AC1;
+}
+
+/* Active effect for logout button */
+.logout-btn:active {
+  transform: scale(0.9);
+}

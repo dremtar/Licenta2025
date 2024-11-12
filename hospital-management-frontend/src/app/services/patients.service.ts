@@ -8,7 +8,7 @@ import { Client, Patient } from '../models/hospital.model';
 })
 export class PatientsService {
 
-  private apiUrl = 'https://localhost:44360'; // Update this to match your API URL
+  private apiUrl = 'https://localhost:44360/api'; // Update this to match your API URL
   private hospitalClient =  new Client(this.http, this.apiUrl);
 
   constructor(private http: HttpClient) { }

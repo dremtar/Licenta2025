@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PatientsService } from '../../services/patients.service';
 import { Patient } from '../../models/hospital.model';
-import { FormControl } from '@angular/forms';
 import { MatTableDataSource } from '@angular/material/table';
 
 @Component({

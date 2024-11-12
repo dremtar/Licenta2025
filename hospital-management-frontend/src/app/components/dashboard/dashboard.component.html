@@ -1,0 +1,13 @@
+<div class="page">
+  <div class="sidenav">
+    <div (click)="switchView('patients')" [ngClass]="{'nav-item': true, 'active': currentView === 'patients'}">Patients</div>
+    <div class="break-line"></div>
+    <div (click)="switchView('doctors')" [ngClass]="{'nav-item': true, 'active': currentView === 'doctors'}">Doctors</div>
+    <div class="break-line"></div>
+    <div (click)="logOut()" class="logout-btn">Log Out</div>
+  </div>
+  <div class="content">
+    <app-patients-list *ngIf="currentView === 'patients'"></app-patients-list>
+    <app-doctors-list *ngIf="currentView === 'doctors'"></app-doctors-list>
+  </div>
+</div>

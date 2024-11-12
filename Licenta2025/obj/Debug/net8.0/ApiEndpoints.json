@@ -2,7 +2,7 @@
   {
     "ContainingType": "Licenta2025.Controllers.HospitalController",
     "Method": "GetDoctors",
-    "RelativePath": "doctors",
+    "RelativePath": "api/doctors",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -21,8 +21,34 @@
   },
   {
     "ContainingType": "Licenta2025.Controllers.HospitalController",
+    "Method": "PostLoginUsernamePassword",
+    "RelativePath": "api/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "body",
+        "Type": "Licenta2025.UserLoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Licenta2025.LoginDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Licenta2025.Controllers.HospitalController",
     "Method": "GetPatientId",
-    "RelativePath": "patient/{id}",
+    "RelativePath": "api/patient/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -48,7 +74,7 @@
   {
     "ContainingType": "Licenta2025.Controllers.HospitalController",
     "Method": "GetPatients",
-    "RelativePath": "patients",
+    "RelativePath": "api/patients",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -64,5 +90,21 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "Licenta2025.Controllers.HospitalController",
+    "Method": "PostRegister",
+    "RelativePath": "api/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "body",
+        "Type": "Licenta2025.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
