@@ -1,0 +1,35 @@
+<div class="login-container">
+  <div class="login-box">
+    <h2>Login! 👋</h2>
+    <p class="intro-text">How do I get started?</p>
+
+    <!-- Google Sign In Button -->
+    <button class="btn google-btn">
+      <i class="fab fa-google"></i> Sign in with Google
+    </button>
+
+    <!-- Apple Sign In Button -->
+    <button class="btn apple-btn">
+      <i class="fab fa-apple"></i> Sign in with Apple
+    </button>
+
+    <p class="alternative-login"></p>
+
+    <!-- Login Form -->
+    <form>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" [(ngModel)]="username" placeholder="test@atheros.ai">
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" [(ngModel)]="password" placeholder="******">
+      </div>
+
+      <button type="submit" class="btn submit-btn" (click)="onLogin()">Sign In</button>
+    </form>
+
+    <p class="signup-text">Don't have an account? <a href="#">Sign Up Now</a></p>
+  </div>
+</div>
