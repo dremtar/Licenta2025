@@ -18,6 +18,8 @@ obj/
 *.dbmdl
 *.jfm
 libman.json
+AssemblyInfo.cs
+AssemblyInfoInputs.cache
 
 # Ignore publish output
 publish/
